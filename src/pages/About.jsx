@@ -6,9 +6,12 @@ import { useLanguage } from '../context/LanguageContext'
 
 /* ─── Animated Counter ─── */
 const AnimatedNumber = ({ target, suffix, isVisible }) => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(target)
   useEffect(() => {
-    if (!isVisible) return
+    if (!isVisible) {
+      setCount(0)
+      return
+    }
     let start = 0
     const duration = 2000
     const step = target / (duration / 16)

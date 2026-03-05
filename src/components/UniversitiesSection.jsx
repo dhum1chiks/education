@@ -17,7 +17,7 @@ const partners = [
     name: 'Imperial College London',
     country: '🇬🇧',
     region: 'UK',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop',
   },
   {
     name: 'UCL',
@@ -35,7 +35,7 @@ const partners = [
     name: 'University of Edinburgh',
     country: '🇬🇧',
     region: 'UK',
-    image: 'https://images.unsplash.com/photo-1583225173760-45e5c1b2f992?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=400&fit=crop',
   },
   {
     name: 'Harvard University',

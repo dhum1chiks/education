@@ -1,16 +1,76 @@
 const partners = [
-  { name: 'University of Oxford', country: '🇬🇧', region: 'UK' },
-  { name: 'University of Cambridge', country: '🇬🇧', region: 'UK' },
-  { name: 'Imperial College London', country: '🇬🇧', region: 'UK' },
-  { name: 'UCL', country: '🇬🇧', region: 'UK' },
-  { name: 'LSE', country: '🇬🇧', region: 'UK' },
-  { name: 'University of Edinburgh', country: '🇬🇧', region: 'UK' },
-  { name: 'Harvard University', country: '🇺🇸', region: 'USA' },
-  { name: 'MIT', country: '🇺🇸', region: 'USA' },
-  { name: 'Stanford University', country: '🇺🇸', region: 'USA' },
-  { name: 'University of Toronto', country: '🇨🇦', region: 'Canada' },
-  { name: 'ETH Zurich', country: '🇨🇭', region: 'Europe' },
-  { name: 'University of Melbourne', country: '🇦🇺', region: 'Australia' },
+  {
+    name: 'University of Oxford',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Oxford-University-Circlet.svg/200px-Oxford-University-Circlet.svg.png',
+  },
+  {
+    name: 'University of Cambridge',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Coat_of_Arms_of_the_University_of_Cambridge.svg/200px-Coat_of_Arms_of_the_University_of_Cambridge.svg.png',
+  },
+  {
+    name: 'Imperial College London',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Imperial_College_London_crest.svg/200px-Imperial_College_London_crest.svg.png',
+  },
+  {
+    name: 'UCL',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/sco/thumb/d/d1/University_College_London_logo.svg/300px-University_College_London_logo.svg.png',
+  },
+  {
+    name: 'LSE',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/LSE_Logo.svg/300px-LSE_Logo.svg.png',
+  },
+  {
+    name: 'University of Edinburgh',
+    country: '🇬🇧',
+    region: 'UK',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/University_of_Edinburgh_coat_of_arms.svg/200px-University_of_Edinburgh_coat_of_arms.svg.png',
+  },
+  {
+    name: 'Harvard University',
+    country: '🇺🇸',
+    region: 'USA',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/200px-Harvard_University_coat_of_arms.svg.png',
+  },
+  {
+    name: 'MIT',
+    country: '🇺🇸',
+    region: 'USA',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/300px-MIT_logo.svg.png',
+  },
+  {
+    name: 'Stanford University',
+    country: '🇺🇸',
+    region: 'USA',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/200px-Seal_of_Leland_Stanford_Junior_University.svg.png',
+  },
+  {
+    name: 'University of Toronto',
+    country: '🇨🇦',
+    region: 'Canada',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/200px-Utoronto_coa.svg.png',
+  },
+  {
+    name: 'ETH Zurich',
+    country: '🇨🇭',
+    region: 'Europe',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/ETH_Z%C3%BCrich_wordmark.svg/300px-ETH_Z%C3%BCrich_wordmark.svg.png',
+  },
+  {
+    name: 'University of Melbourne',
+    country: '🇦🇺',
+    region: 'Australia',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/University_of_Melbourne_coat_of_arms.svg/200px-University_of_Melbourne_coat_of_arms.svg.png',
+  },
 ]
 
 const UniversitiesSection = () => {
@@ -34,11 +94,12 @@ const UniversitiesSection = () => {
               key={p.name}
               className="group bg-white rounded-2xl p-6 shadow-sm border border-neutral-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center gap-3"
             >
-              <div className="w-14 h-14 bg-primary/5 group-hover:bg-primary/10 rounded-xl flex items-center justify-center transition-colors">
-                <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                </svg>
+              <div className="w-20 h-20 rounded-xl flex items-center justify-center overflow-hidden p-2">
+                <img
+                  src={p.logo}
+                  alt={`${p.name} logo`}
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
               <span className="text-sm font-semibold text-neutral-800">{p.name}</span>
               <span className="text-xs text-neutral-500">{p.country} {p.region}</span>

@@ -21,33 +21,20 @@ const Hero = () => {
               <span className="text-white/90 text-sm font-medium">Trusted by 500+ students worldwide</span>
             </div>
 
-            <h1 className="font-display text-[36px] sm:text-[48px] font-bold text-white leading-tight mb-6">
-              Your Path to{' '}
-              <span className="text-accent-light">World-Class</span>{' '}
-              University Admissions
+            <h1 className="font-display text-[28px] sm:text-[40px] md:text-[48px] font-bold text-white leading-tight mb-6">
+              Helping Students Secure University Admissions Worldwide
             </h1>
 
             <p className="text-[16px] text-white/90 leading-relaxed mb-8 max-w-xl">
-              On Track Admissions is a premier global consultancy helping ambitious students 
-              gain admission to top universities across the UK, US, Europe, and beyond. 
-              Expert guidance from application to acceptance.
+              Expert guidance for international students applying to universities across the UK and globally.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-lg text-[16px] font-bold uppercase tracking-wider transition-all hover:shadow-lg min-h-[48px] group"
+                href="/consultation"
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-lg text-[16px] font-bold uppercase tracking-wider transition-all hover:shadow-lg min-h-[48px]"
               >
-                Book Free Consultation
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-neutral-50 text-primary border-2 border-white px-8 py-3 rounded-lg text-[16px] font-bold uppercase tracking-wider transition-all min-h-[48px]"
-              >
-                Explore Services
+                Book a Consultation
               </a>
             </div>
 
